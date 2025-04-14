@@ -1,0 +1,20 @@
+services:
+  node:
+    container_name: pro3_node
+    restart: "unless-stopped"
+    image: pro3/node
+    build:
+      context: ./
+      dockerfile: ./services/node/Dockerfile
+    volumes:
+      - ../app:/home/node/app
+    networks:
+      - node_proxy
+    env_file:
+      - ./services/node/files/.env
+    ports:
+      - "80:80"
+
+networks:
+  node_proxy:
+    name: node_proxy

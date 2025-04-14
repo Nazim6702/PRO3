@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
-docker compose -f ../_ops/docker-compose.yml down
+docker compose -f ../docker-compose.yml -down
