@@ -4,7 +4,8 @@ COPY ./services/node/scripts/entrypoint.sh /docker-scripts/entrypoint.sh
 RUN chmod +x /docker-scripts/entrypoint.sh
 
 RUN apt-get update && \ 
-    apt-get install -y --no-install-recommends
+    apt-get install -y --no-install-recommends \
+    ca-certificates
 
 RUN npm install -g pnpm
 
