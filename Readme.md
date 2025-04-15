@@ -14,8 +14,11 @@ Ce projet a été réalisé dans le cadre de DevOps.
 | Guilavogui        | Henry Pamphil     |
 | Lakrouz           | Sarah             |
 
+
+Commandes à utiliser :
 ```bash
 cd _ops/scripts
+```
 
 ```bash
 ./up.sh
