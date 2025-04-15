@@ -13,3 +13,14 @@ Ce projet a été réalisé dans le cadre de DevOps.
 | Leng              | Antoine           |
 | Guilavogui        | Henry Pamphil     |
 | Lakrouz           | Sarah             |
+
+```bash
+cd _ops/scripts
+
+```bash
+./up.sh
+```
+
+```bash
+curl -k http://localhost:80
+```
